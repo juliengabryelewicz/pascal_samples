@@ -1,24 +1,24 @@
-Program FibonacciAlgorithm;
+program fibonacciAlgorithm;
 
 {$mode objFPC}
 
-Function Fibonacci(n:Integer):Integer;
-Begin
+function fibonacci(n:integer):integer;
+begin
    if (n = 0) then
-      Fibonacci:=0
+      fibonacci:=0
    else if (n <= 2) then
-      Fibonacci:=1
+      fibonacci:=1
    else
-      Fibonacci:=Fibonacci(n-1) + Fibonacci(n-2)
-End;
+      fibonacci:=fibonacci(n-1) + fibonacci(n-2)
+end;
 
-Var
-   i:Integer; 
-Begin
-   For i:=0 to 10 do 
-   Begin
-      WriteLn('Fibonacci(',i,') = ',Fibonacci(i));
-   End;
-End.
+var
+   i:integer; 
+begin
+   for i:=0 to 10 do 
+   begin
+      writeln('fibonacci(',i,') = ',fibonacci(i));
+   end;
+end.
 
 
